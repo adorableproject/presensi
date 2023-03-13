@@ -1,6 +1,5 @@
 import { get } from "https://jscroot.github.io/api/croot.js";
 import { setInner } from "https://jscroot.github.io/element/croot.js";
-import {objres,setDebug,getDebug} from "./config/var.js";
 
 let URLPresensi = "https://gocroot.herokuapp.com/presensi";
 
@@ -8,6 +7,13 @@ get(URLPresensi,isiTablePresensi);
 
 function isiTablePresensi(results){
     console.log(results);
-    setDebug(results);
+    results.forEach(isiRow);
 }
+
+function isiRow(value){
+    console.log(value)
+  }
+
+
+
 setInner("namadivisi","Dari croot.js");
