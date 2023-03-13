@@ -14,6 +14,7 @@ function isiTablePresensi(results){
 
 function isiRow(value){
     let row=tr.replace("#NAMA#",value.Biodata.Nama).replace("#PHONENUMBER#",value.Phone_number).replace("#LOKASI#",value.Location).replace("#KET#",value.Checkin).replace("#MASUK#",value.Datetime).replace("#PULANG#",value.Datetime).replace("#DURASI#",value.Datetime).replace("#WARNA#",getRandomColor()).replace("#WARNALOGO#",getRandomColorName());
+    console.log(row)
     addInner("karyawan",row)
 }
 
