@@ -1,6 +1,6 @@
 import { get } from "https://jscroot.github.io/api/croot.js";
 import { setInner } from "https://jscroot.github.io/element/croot.js";
-import {setDebug,getDebug} from "./config/var.js";
+import {objres,setDebug,getDebug} from "./config/var.js";
 
 let URLPresensi = "https://gocroot.herokuapp.com/presensi";
 
