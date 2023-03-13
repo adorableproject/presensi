@@ -27,7 +27,8 @@ export let tr=`
 </tr>
 `
 
-export let trtag = document.createElement('tr').classList.add('h-18', 'border-b', 'border-coolGray-100');
+export let trtag = document.createElement('tr');
+trtag.classList.add('h-18', 'border-b', 'border-coolGray-100');
 
 export let trcontent=`
 <th class="whitespace-nowrap px-4 bg-white text-left">
