@@ -1,6 +1,6 @@
 import { get } from "https://jscroot.github.io/api/croot.js";
 import { setInner, addInner } from "https://jscroot.github.io/element/croot.js";
-import {getRandomColor} from "https://jscroot.github.io/image/croot.js";
+import {getRandomColor,getRandomColorName} from "https://jscroot.github.io/image/croot.js";
 import {tr} from "./template/table.js"
 
 
@@ -13,8 +13,7 @@ function isiTablePresensi(results){
 }
 
 function isiRow(value){
-    let row=tr.replace("#NAMA#",value.Biodata.Nama).replace("#PHONENUMBER#",value.Phone_number).replace("#LOKASI#",value.Location).replace("#KET#",value.Checkin).replace("#MASUK#",value.Datetime).replace("#PULANG#",value.Datetime).replace("#DURASI#",value.Datetime).replace("#WARNA#",getRandomColor());
-    console.log(row)
+    let row=tr.replace("#NAMA#",value.Biodata.Nama).replace("#PHONENUMBER#",value.Phone_number).replace("#LOKASI#",value.Location).replace("#KET#",value.Checkin).replace("#MASUK#",value.Datetime).replace("#PULANG#",value.Datetime).replace("#DURASI#",value.Datetime).replace("#WARNA#",getRandomColor()).replace("#WARNALOGO#",getRandomColorName());
     addInner("karyawan",row)
 }
 
