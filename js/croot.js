@@ -6,13 +6,12 @@ let URLPresensi = "https://gocroot.herokuapp.com/presensi";
 get(URLPresensi,isiTablePresensi);
 
 function isiTablePresensi(results){
-    console.log(results);
     results.forEach(isiRow);
 }
 
 function isiRow(value){
-    console.log(value)
-  }
+    console.log(value.Biodata.Nama)
+}
 
 
 
