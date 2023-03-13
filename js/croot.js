@@ -2,7 +2,7 @@ import { get } from "https://jscroot.github.io/api/croot.js";
 import { setInner } from "https://jscroot.github.io/element/croot.js";
 
 let URLPresensi = "https://gocroot.herokuapp.com/presensi";
-let hasil={};
+let hasil="s";
 
 get(URLPresensi,isiTablePresensi);
 
