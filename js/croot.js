@@ -14,10 +14,10 @@ function isiTablePresensi(results){
 
 function isiRow(value){
     let trtag = document.createElement('tr');
-    trtag.classList.add('h-18', 'border-b', 'border-coolGray-100');
+    trtag.classList.add('h-18 border-b border-coolGray-100');
     let row=trcontent.replace("#NAMA#",value.Biodata.Nama).replace("#PHONENUMBER#",value.Phone_number).replace("#LOKASI#",value.Location).replace("#KET#",value.Checkin).replace("#MASUK#",value.Datetime).replace("#PULANG#",value.Datetime).replace("#DURASI#",value.Datetime).replace("#WARNA#",getRandomColor()).replace(/#WARNALOGO#/g,getRandomColorName());
     trtag.innerHTML = row 
-    console.log(trtag)
+    //console.log(trtag)
     document.getElementById('karyawan').appendChild(trtag);
 }
 
