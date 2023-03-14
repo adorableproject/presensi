@@ -14,7 +14,6 @@ function isiTablePresensi(results){
 
 function isiRow(value){
     let trtag = document.createElement('tr');
-    
     trtag.classList.add('h-18');
     trtag.classList.add('border-b');
     trtag.classList.add('border-coolGray-100');
